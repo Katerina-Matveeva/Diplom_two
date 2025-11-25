@@ -1,0 +1,142 @@
+{
+  "uid" : "24f1708aa0dd91c8",
+  "name" : "Создание заказа с авторизацией и ингредиентами",
+  "fullName" : "OrderTest.testCreateOrderWithTokenSuccess",
+  "historyId" : "f7fd88b0301eaffb950b048cacda5852",
+  "time" : {
+    "start" : 1764014806830,
+    "stop" : 1764014810840,
+    "duration" : 4010
+  },
+  "description" : "Проверяет успешное создание заказа с авторизацией и валидными ингредиентами",
+  "descriptionHtml" : "<p>Проверяет успешное создание заказа с авторизацией и валидными ингредиентами</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Проверяет успешное создание заказа с авторизацией и валидными ингредиентами",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создать пользователя",
+      "time" : {
+        "start" : 1764014806830,
+        "stop" : 1764014807014,
+        "duration" : 184
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userModel",
+        "value" : "models.UserModel@2acf3108"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Получить токен доступа",
+      "time" : {
+        "start" : 1764014807015,
+        "stop" : 1764014807023,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "response",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@274010fe"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Создать заказ",
+      "time" : {
+        "start" : 1764014807023,
+        "stop" : 1764014810134,
+        "duration" : 3111
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "orderModel",
+        "value" : "models.OrderModel@6ca95b1e"
+      }, {
+        "name" : "userAccessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjRiYWQ3OTg0MjcwMDAxYmUwOWM1MSIsImlhdCI6MTc2NDAxNDgwNywiZXhwIjoxNzY0MDE2MDA3fQ.ObMvk1CsKuTvg-86dleHJIdwOv6NZeT4q2ApdPMUYZM"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Удалить пользователя",
+      "time" : {
+        "start" : 1764014810162,
+        "stop" : 1764014810840,
+        "duration" : 678
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userAccessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjRiYWQ3OTg0MjcwMDAxYmUwOWM1MSIsImlhdCI6MTc2NDAxNDgwNywiZXhwIjoxNzY0MDE2MDA3fQ.ObMvk1CsKuTvg-86dleHJIdwOv6NZeT4q2ApdPMUYZM"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "OrderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testCreateOrderWithTokenSuccess"
+  }, {
+    "name" : "suite",
+    "value" : "OrderTest"
+  }, {
+    "name" : "host",
+    "value" : "iMac-Ekaterina.local"
+  }, {
+    "name" : "thread",
+    "value" : "15856@iMac-Ekaterina.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "24f1708aa0dd91c8.json",
+  "parameterValues" : [ ]
+}
