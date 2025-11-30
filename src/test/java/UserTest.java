@@ -59,6 +59,27 @@ public class UserTest extends BaseApiTest {
                 .body("message", equalTo("Email, password and name are required fields"));
     }
 
+    @Test
+    @DisplayName("Создание пользователя без пароля")
+    @Description("Проверяет ошибку при попытке создать пользователя без заполнения пароля")
+    public void testCreateUserWithoutPasswordFailure() {
+        user.setPassword(null);
+        createUser(user).then()
+                .statusCode(HTTP_FORBIDDEN)
+                .body("success", equalTo(false))
+                .body("message", equalTo("Email, password and name are required fields"));
+    }
+    @Test
+    @DisplayName("Создание пользователя без имени")
+    @Description("Проверяет ошибку при попытке создать пользователя без заполнения имени")
+    public void testCreateUserWithoutNameFailure() {
+        user.setName(null);
+        createUser(user).then()
+                .statusCode(HTTP_FORBIDDEN)
+                .body("success", equalTo(false))
+                .body("message", equalTo("Email, password and name are required fields"));
+    }
+
     @After
     public void tearDown() {
         // Код для удаления созданного пользователя

@@ -10,6 +10,15 @@ public class UserModel {
     public String password;
     public String name;
 
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 // добавлен setEmail чтобы убрать ошибку "Cannot resolve method 'setEmail' in 'UserModel'" В тесте testCreateUserWithoutEmailFailure
     public void setEmail(String email) {
         this.email = email;

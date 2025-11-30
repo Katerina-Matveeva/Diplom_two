@@ -3,6 +3,7 @@ import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import models.UserModel;
 import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static data.TestData.*;
@@ -16,14 +17,20 @@ public class LoginTest extends BaseApiTest {
 
     private String userAccessToken;  // Поле для токена
 
+    @Before
+    public  void createUserForTest() {
+        // Создание пользователя перед каждым тестом
+        UserModel user = new UserModel(EMAIL, PASSWORD, NAME);
+        Response resCreate = createUser(user);
+        this.userAccessToken = getUserAccessToken(resCreate);  // Сохраняем токен
+    }
+
     @Test
     @DisplayName("Логин под существующим пользователем")
     @Description("Проверяет успешный вход с валидными данными")
     public void testLoginExistingUserSuccess() {
+        // Пользователь создан в @Before, используем его для логина
         UserModel user = new UserModel(EMAIL, PASSWORD, NAME);
-        Response resCreate = createUser(user);
-        this.userAccessToken = getUserAccessToken(resCreate);  // Сохраняем токен
-
         Response resLogin = loginUser(user, "");  // Без токена в header для логина
         resLogin.then()
                 .statusCode(HTTP_OK)
