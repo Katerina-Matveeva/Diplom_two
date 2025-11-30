@@ -1,0 +1,98 @@
+{
+  "uid" : "bafce5628536af9b",
+  "name" : "Логин с неверным логином",
+  "fullName" : "LoginTest.testLoginWrongLoginFailure",
+  "historyId" : "eb55e10bda627361fc82baddcc799ed3",
+  "time" : {
+    "start" : 1764056321481,
+    "stop" : 1764056321597,
+    "duration" : 116
+  },
+  "description" : "Проверяет ошибку при входе с неверным логином и правильным паролем",
+  "descriptionHtml" : "<p>Проверяет ошибку при входе с неверным логином и правильным паролем</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Проверяет ошибку при входе с неверным логином и правильным паролем",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Логин пользователя",
+      "time" : {
+        "start" : 1764056321481,
+        "stop" : 1764056321586,
+        "duration" : 105
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userModel",
+        "value" : "models.UserModel@254dfd34"
+      }, {
+        "name" : "userAccessToken",
+        "value" : ""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLoginWrongLoginFailure"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "iMac-Ekaterina.local"
+  }, {
+    "name" : "thread",
+    "value" : "24696@iMac-Ekaterina.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ec036699e156bca2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1764014802305,
+        "stop" : 1764014802422,
+        "duration" : 117
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bafce5628536af9b.json",
+  "parameterValues" : [ ]
+}

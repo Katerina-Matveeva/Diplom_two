@@ -1,0 +1,88 @@
+{
+  "uid" : "49b4a96ad733dc45",
+  "name" : "Логин с неверным паролем",
+  "fullName" : "LoginTest.testLoginWrongPasswordFailure",
+  "historyId" : "56f2b3490cec0c67f89516ef6429525c",
+  "time" : {
+    "start" : 1764014803542,
+    "stop" : 1764014803658,
+    "duration" : 116
+  },
+  "description" : "Проверяет ошибку при входе с правильным логином и неверным паролем",
+  "descriptionHtml" : "<p>Проверяет ошибку при входе с правильным логином и неверным паролем</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Проверяет ошибку при входе с правильным логином и неверным паролем",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Логин пользователя",
+      "time" : {
+        "start" : 1764014803542,
+        "stop" : 1764014803649,
+        "duration" : 107
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userModel",
+        "value" : "models.UserModel@489ec791"
+      }, {
+        "name" : "userAccessToken",
+        "value" : ""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLoginWrongPasswordFailure"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "iMac-Ekaterina.local"
+  }, {
+    "name" : "thread",
+    "value" : "15856@iMac-Ekaterina.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "49b4a96ad733dc45.json",
+  "parameterValues" : [ ]
+}
